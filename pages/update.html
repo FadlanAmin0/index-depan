@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Jadwal - Jadwal Kajian Subuh 2025</title>
+    <link rel="stylesheet" href="../css/update.css" />
+</head>
+<body>
+    <header>
+        <h1>Jadwal Kajian Subuh 2025</h1>
+        <nav>
+            <a href="../pages/beranda.html">Jadwal Terbaru</a>
+            <a href="../pages/update.html">Update Jadwal</a>
+            <a href="#">Galeri</a>
+            <a href="../pages/kontak.html">Kontak Kami</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Update Jadwal Kajian Subuh</h2>
+        <form id="updateForm">
+            <label for="tanggal">Tanggal:</label>
+            <input type="date" id="tanggal" name="tanggal" required>
+
+            <label for="masjid">Masjid:</label>
+            <input type="text" id="masjid" name="masjid" required placeholder="Nama Masjid">
+
+            <label for="waktu">Waktu Subuh:</label>
+            <input type="time" id="waktu" name="waktu" required>
+
+            <button type="submit">Update Jadwal</button>
+        </form>
+        <p id="updateMessage" class="hidden"></p>
+    </main>
+    <footer>
+        <p>Kontak Kami: info@KajianSubuh2025.com</p>
+    </footer>
+
+    <!-- Link to external JavaScript file -->
+    <script src="../js/update.js"></script>
+</body>
+</html>
+    <!-- bikin hasil uupdatenya di nav update jadwal aja -->

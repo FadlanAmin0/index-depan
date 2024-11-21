@@ -1,0 +1,124 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #f0f2f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 20px;
+}
+
+/* Login Wrapper and Card */
+.login-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.login-card {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 350px;
+    width: 100%;
+    text-align: center;
+}
+
+.login-card h2 {
+    margin: 0 0 10px;
+    color: #2a9d8f;
+    font-size: 24px;
+}
+
+.login-card p {
+    color: #777;
+    margin-bottom: 30px;
+}
+
+/* Input Group */
+.input-group {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.input-group input:focus {
+    border-color: #2a9d8f;
+}
+
+.input-group label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    color: #aaa;
+    font-size: 16px;
+    pointer-events: none;
+    transform: translateY(-50%);
+    transition: 0.3s ease all;
+}
+
+.input-group input:focus + label,
+.input-group input:not(:placeholder-shown) + label {
+    top: 0;
+    font-size: 12px;
+    color: #2a9d8f;
+    background: white;
+    padding: 0 5px;
+    transform: translateY(-50%);
+}
+
+/* Button */
+.login-btn {
+    background-color: #2a9d8f; 
+    color: white;            
+    border: none;             
+    padding: 15px 40px;      
+    font-size: 16px;          
+    border-radius: 10px;      
+    cursor: pointer;          
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); 
+    transition: background-color 0.3s ease;     
+}
+
+.login-btn:hover {
+    background-color: #4e6a7b; 
+}
+
+
+/* Login Message */
+#loginMessage {
+    margin-top: 10px;
+    color: red;
+    font-weight: 500;
+}
+
+.hidden {
+    display: none;
+}
